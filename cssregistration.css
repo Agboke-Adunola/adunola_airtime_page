@@ -69,7 +69,20 @@ p a {
   color: #348fe2;
   text-decoration: none;
 }
-
+#error-message {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff4d4f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* hidden by default */
+    z-index: 1000;
+}
+.heading {
+    position: relative; /* Makes the error position relative to this container */
+}
 @media screen and (max-width: 800px) {
   .general,
   .sub-container {
