@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Adun Codes - REGISTER</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css folder/cssregistration.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sub-container">
+        <img src="./images/images2.jpg" alt="images2" />
+      </div>
+
+      <div class="general">
+        <form action="" method="get">
+          <h3>CREATE AN ACCOUNT</h3>
+
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Enter Your Email Address"
+            id="email"
+          />
+
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First name"
+            minlength="2"
+            maxlength="12"
+          />
+
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            minlength="2"
+            maxlength="12"
+          />
+
+          <input
+            type="text"
+            name="username"
+            pattern="[a-zA-Z0-9]+"
+            placeholder="Username"
+            id="Username"
+            minlength="6"
+            maxlength="10"
+          />
+
+          <input
+            type="number"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="Enter Your Phone Number"
+            maxlength="15"
+          />
+
+          <input
+            type="password"
+            name="password"
+            minlength="8"
+            maxlength="20"
+            placeholder="Enter Your Password"
+            id="password"
+            required
+          />
+
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="Confirm Your Password"
+            minlength="8"
+            maxlength="20"
+            required
+          />
+
+          <input type="submit" id="register" name="register" value="Register" />
+          <p>
+            Already a member? Click
+            <a href="./html/logininterface.html">here</a> to login.
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+body{
+font-family: "Montserrat", Arial, sans-serif;
+background: mediumpurple;
+}
+.heading{
+margin: 100px auto;
+height:60%;
+width:70%;
+border-radius: 10px;
+padding:5px;
+border: 0;
+background: red;
+}
+
+.form1{
+width:50%;
+border-radius: 10px;
+background-color: #FFDEAD;
+float: left;
+border:0;
+
+}
+.image-div{
+width:50%;
+float:left;
+}
+
+.image-div img{
+max-width:100%;
+}
+input{
+  width:60%;
+  padding:10px;
+  margin:15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:0;
+  border-radius: 8px;
+
+
+}
+input:focus{
+  outline: none;
+  background-color:coral;
+  color:red;
+
+}
+
+p {
+  font-size: 14px;
+  padding: 0 15px;
+
+
+}
+p a{
+color: #348fe2;
+text-decoration: none;
+}
+h3{
+
+  text-align: center !important;
+  font-size: 24px;
+}
+#signIn{
+width:65%;
+background-color:#3CB371;
+color:white;
+padding:10px;
+font-weight: 500;
+border:0;
+border-radius: 5px;
+align-items: center;
+font-weight: 600;
+
+
+}
+@media screen and (max-width:800px){
+.form1, .image-div {
+    width:100%;
+}
+
+}
