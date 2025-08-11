@@ -1,0 +1,257 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #0d47a1;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header ul.remlad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header ul.remlad li a {
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: background 0.3s ease;
+}
+
+header ul.remlad li a:hover {
+  background-color: #1565c0;
+  border-radius: 4px;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+main h4 {
+  color: #555;
+}
+
+main h2 {
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.back, .bac {
+  display: inline-block;
+  background-color: #0d47a1;
+  color: white;
+  padding: 8px 15px;
+  margin: 10px 5px 20px 0;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.back:hover, .bac:hover {
+  background-color: #1565c0;
+}
+
+/* ===== SERVICES SECTION ===== */
+article {
+  margin-top: 30px;
+}
+
+article h1 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+article h2 {
+  margin-top: 20px;
+  color: #1565c0;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+/* ===== PLAN CARDS ===== */
+section {
+  background: #fff;
+  padding: 30px 20px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h1, section h {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0d47a1;
+}
+
+section a {
+  display: inline-block;
+  background-color: #0d47a1;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+#plan, #plan2 {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+section > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
+
+}
+
+.network-type_container div > ul {
+  flex: 1 1 calc(50% - 20px);
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 6px;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.glo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+.sub {
+  font-size: 16px;
+  color: #333;
+}
+
+.network-type_container{
+  display: flex;
+  justify-content: center;
+}
+.text-center{
+  text-align: center;
+}
+.price_plan_container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buy-now a {
+  display: inline-block;
+  background: #ff5722;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.buy-now a:hover {
+  background: #e64a19;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0d47a1;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer p.quick {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer article {
+  max-width: 250px;
+}
+
+footer ul.twitter {
+  display: flex;
+  gap: 10px;
+}
+
+footer ul.twitter img {
+  width: 30px;
+  height: 30px;
+}
+
+footer ul.buy li {
+  margin: 5px 0;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.spaces, .spaces2 {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.spaces2 {
+  background-color: #ff5722;
+  color: white;
+  cursor: pointer;
+}
+
+.spaces2:hover {
+  background-color: #e64a19;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  header ul.remlad {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  section > div {
+    flex-direction: column;
+  }
+  .network-type_container div > ul {
+min-width: 100%;
+}
+
+  footer {
+    flex-direction: column;
+  }
+}

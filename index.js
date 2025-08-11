@@ -21,7 +21,7 @@ document.getElementById("login").addEventListener("submit", function (event) {
 
   if (!passwordPattern.test(password)) {
     errorMessage.textContent =
-      "Password must be at least 8 characters and include letters & numbers.";
+      "Password must be at least 8 characters and include letters,alphanumeric & numbers.";
     errorMessage.style.display = "block";
 
     errorMessage.style.color = "red";
